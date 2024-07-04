@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Construyendo una ciudad mejor</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #007bff;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  h2 {
+    color: #007bff;
+    text-align: center;
+  }
+  label {
+    display: block;
+    margin-top: 10px;
+    color: #333;
+  }
+  input[type="text"],
+  select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical; /* Permite redimensionar verticalmente */
+  }
+  input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h2>Construyendo una ciudad mejor</h2>
+  <form action="#" method="post">
+    <label for="nombre">Nombre Completo:</label>
+    <input type="text" id="nombre" name="nombre" required>
+    
+    <label for="departamento">Departamento:</label>
+    <input type="text" id="departamento" name="departamento" required>
+    
+    <label for="provincia">Provincia:</label>
+    <input type="text" id="provincia" name="provincia" required>
+    
+    <label for="distrito">Distrito:</label>
+    <input type="text" id="distrito" name="distrito" required>
+    
+    <label for="urbanizacion">Urbanización:</label>
+    <input type="text" id="urbanizacion" name="urbanizacion" required>
+    
+    <label for="necesidad">Seleccione la necesidad:</label>
+    <select id="necesidad" name="necesidad" required>
+      <option value="">Seleccionar Necesidad</option>
+      <option value="Hospitales">Construcción de Hospitales</option>
+      <option value="Colegios">Construcción de Colegios</option>
+      <option value="Pistas">Mejora de Pistas y Vías</option>
+    </select>
+    
+    <label for="justificacion">Justificación de la necesidad:</label>
+    <textarea id="justificacion" name="justificacion" rows="4" required></textarea>
+    
+    <input type="submit" value="Registrarse y Votar">
+  </form>
+</div>
+</body>
+</html>
+
